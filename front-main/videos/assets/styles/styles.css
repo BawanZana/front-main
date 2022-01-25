@@ -1,0 +1,382 @@
+header {
+    background-color: #f2f2f2;
+    padding: 1rem;
+}
+.container {
+    max-width: 960px;
+    margin: auto;
+}
+header .container {
+    display: flex;
+    flex-direction: column;
+}
+header #branding {
+    display: flex;
+    align-items: center;
+}
+header #branding-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 1.5rem;
+    font-size: .7rem;
+}
+header #branding-text h1, header #branding-text h2, header #branding-text h3 {
+    margin: .4rem 0;
+    text-transform: uppercase;
+}
+nav {
+    background-color: #1f468B;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+}
+nav ul li {
+    height: 100%;
+    padding: 1rem 0;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+#showcase {
+    background-color: #2ab5bb;
+    background-image: linear-gradient(135deg, #2ab5bb 8%, #2a7bbb);
+    display: flex;
+    min-height: 35vh;
+}
+#showcase .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+#showcase .container h2 {
+    font-size: 2.5rem;
+    padding: 1rem 0 0;
+    color: #fff;
+    height: 100%;
+}
+
+#showcase .container p {
+    font-weight: 500;
+    margin: 1rem;
+    color: #f1f1f1;
+}
+#showcase .search {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#showcase .search p {
+    color: #fff;
+}
+#showcase .search input {
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #f1f1f1;
+    color: #000;
+    margin: 1rem;
+    width: 30vw;
+    margin-bottom: 5rem;
+}
+#showcase .search button {
+    background-color: #1f468B;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#videos .container {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem auto;
+    position: relative;
+    align-items: center;
+
+}
+#videos .container h2,
+#videos .container p {
+    text-align: center;
+}
+#videos .container .video-list {
+    width: 100%;
+    display: flex;
+    perspective: 2000px;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+#videos .container .card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    margin: 1rem;
+    min-height: 15rem;
+    width: 18rem;
+    padding-bottom: 1rem;
+    flex-grow: 1;
+}
+#videos .container .card:hover {
+    transform: rotateX(0deg) rotateY(10deg) rotateZ(0deg);
+    transition: transform 500ms ease;
+}
+#videos .container .card a {
+    text-decoration: none;
+    color: #000;
+}
+#videos .container .card .card-image {
+    background-color: #2ab5bb;
+    background-image: linear-gradient(135deg, #2ab5bb 8%, #2a7bbb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 10rem;
+    border-radius: 4px 4px 0 0;
+}
+#videos .container .card .card-image img {
+    max-width:230px;
+    max-height:48px;
+    width: auto;
+    height: auto;
+}
+#videos .container .card h3 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-align: left;
+    padding: 0 1.5rem;
+}
+#videos .container .card p {
+    font-size: .9rem;
+    margin: 0 1.5rem;
+    text-align: justify;
+    padding-bottom: 1rem;
+}
+#contact-us {
+    background-color: #1f468B;
+    padding: 4rem 0;
+}
+#contact-us .contact-us {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    color: #fff;
+}
+#contact-us .contact-us .form button {
+    background-color: #fff;
+    color: #fff;
+    border: none;
+    padding: .8rem 1.5rem;
+    border-radius: 4px;
+    font-size: .9rem;
+    cursor: pointer;
+    margin-right: 1rem;
+    width: 100%;
+    color: #1f468B;
+}
+#contact-us .contact-us .form button:hover {
+    background-color: #2ab5bb;
+    transition: background-color 200ms ease;
+    color: #fff;
+}
+footer {
+    background-color: #0E0E0E;
+    color: #fff;
+}
+footer .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .footer-content {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 2rem;
+}
+footer .footer-logo img {
+    max-width:230px;
+    max-height:96px;
+    width: auto;
+    height: auto;
+}
+footer .footer-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 2rem;
+    border-left: 1px solid hsla(0, 0%, 100%, 0.1);
+    padding-left: 2rem;
+}
+footer .footer-text h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+footer .footer-contact {
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+    width: 100%;
+}
+footer .footer-contact .footer-contact-item {
+    display: flex;
+    margin-right: 2rem;
+    width: 25%;
+    background-color: #272727;
+    border-radius: 4px;
+    padding: 1rem 2rem
+}
+footer .footer-contact .footer-contact-item a {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-height: 50px;
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+footer .footer-contact .footer-contact-item img {
+    max-height: 56px;
+    opacity: .5;
+}
+footer .footer-contact .footer-contact-item a:hover img {
+    opacity: 1;
+}
+footer .footer-contact .footer-contact-item p {
+    margin: auto 1rem;
+    font-size: .8rem;
+    font-weight: 500;
+    color: #a5a5a5;
+}
+footer .footer-contact .footer-contact-item h3 {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: auto 1rem;
+}
+footer .copyright {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: .8rem;
+    color: #a5a5a5;
+    background-color: #0A0A0A;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 959px) {
+    #videos .container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #showcase .search input {
+        width: 50vw;
+    }
+    #videos .container .card {
+        width: 18rem;
+    }
+
+    footer .footer-content {
+        justify-content: center;
+    }
+    footer .footer-contact {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    footer .footer-contact .footer-contact-item {
+        width: 40%;
+        margin: 1rem auto;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #showcase .container {
+        flex-direction: column;
+    }
+    #showcase .container h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    #showcase .search input {
+        width: 50vw;
+    }
+
+    #contact-us .contact-us {
+        flex-direction: column;
+    }
+
+    #contact-us .contact-us .text {
+        text-align: center;
+        padding: 0 2rem;
+    }
+
+    footer .footer-contact .footer-contact-item {
+        width: 50%;
+    }
+
+    footer .footer-content {
+        margin-top: 4rem;
+        flex-direction: column;
+    }
+    footer .footer-text {
+        align-items: center;
+        border-left: none;
+        margin-left: 0;
+        padding-left: 0;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #showcase .container .search {
+        width: 100%;
+    }
+    #showcase .container .search form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+    #showcase .container .search form input {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+    #showcase .search form {
+        text-align: center;
+    }
+    #showcase .search input {
+        margin-bottom: 3rem;
+    }
+    #showcase .search button {
+        margin-bottom: 3rem;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer .footer-contact .footer-contact-item {
+        width: 80%;
+        margin: 1rem 2rem;
+    }
+    footer .footer-text {
+        text-align: center;
+    }
+}
